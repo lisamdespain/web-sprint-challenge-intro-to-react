@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Character from './components/Character';
 import axios from 'axios';
+import * as uuid from "uuid";
 import styled from "styled-components";
 import { data } from "./mocks/handlers"
+
+
+
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -23,10 +28,10 @@ const App = () => {
   
     return (
       <div className="App">
-        <h1 className="Header">Characters</h1>
+        <h1 className="Header">Star Wars Characters</h1>
         {
           characters.map(char =>{
-            return <Character key={[]} characterName={char.name} birthYear={char.birth_year} />
+            return <Character key={uuid.v4()} characterName={char.name} birthYear={char.birth_year} />
           })
         }
                   
