@@ -15,7 +15,6 @@ const keyf = keyframes`
 const StyledCharacter = styled.div`
 display:flex;
 justify-content:space-between;
-width:60%;
 margin:1rem auto;
 border:1px solid #00100B;
 border-radius:10px;
